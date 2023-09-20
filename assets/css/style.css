@@ -1,0 +1,80 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+form {
+  max-width: 300px;
+  padding: 40px;
+  flex-direction: column;
+  display: flex;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+
+ input[type="text"],
+ input[type="password"] {
+  padding: 12px;
+  margin-bottom: 10px;
+  width: 250px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+ button[type="submit"] {
+  padding: 10px 20px;
+  margin-top: 30px;
+  width: 300px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+select {
+  margin-top: 20px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  appearance: none;
+  cursor: pointer;
+
+}
+
+select:focus {
+  outline: none;
+  box-shadow: 0 0 5px #6c63ff;
+  
+}
+
+select::before {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.signup-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #6c63ff;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+ button[type="submit"]:hover {
+  background-color: #45a049;
+}
