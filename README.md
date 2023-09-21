@@ -7,6 +7,22 @@ Foodi | Food ordering site
 - Catering 
 - Option to use gift card
 
+## Screenshots
+![Foodi main Page screenshot](./assets/screenshots/Screenshot1.png)
+
+![Main page sections screenshot](./assets/screenshots/Screenshot2.png)
+
+![Main page sections screenshot](./assets/screenshots/Screenshot3.png)
+
+![Main page sections screenshot](./assets/screenshots/Screenshot4.png)
+
+![Main page sections screenshot](./assets/screenshots/Screenshot5.png)
+
+![Footer screenshot](./assets/screenshots/Screenshot6.png)
+
+![RegisterPage screenshot](./assets/screenshots/Screenshot7.png)
+
+
 ## Setup
 
 1. Install XAMPP or WAMPP.
