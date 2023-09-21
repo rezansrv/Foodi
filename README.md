@@ -8,7 +8,7 @@ Foodi | Food ordering site
 - Option to use gift card
 
 ## Screenshots
-![Foodi main Page screenshot](assets/screenshots/Screenshot1.png)
+![Foodi main Page screenshot](assets\screenshots\Screenshot1.png)
 
 ![Main page sections screenshot](assets/screenshots/Screenshot2.png)
 
