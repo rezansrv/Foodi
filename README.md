@@ -46,7 +46,7 @@ git@github.com:Rezansrv/Foodi.git
 
 8. after creating database name click on import.
 
-9. browse the file in directory [OnlineNewsSite/database/foodi.sql].
+9. browse the file in directory [./database/foodi.sql].
 
 10. after importing successfully.
 
