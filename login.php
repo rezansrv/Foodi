@@ -1,42 +1,43 @@
 <?php
-// اطلاعات اتصال به دیتابیس
+// Database connection information
 $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "foodi";
 
-// اتصال به دیتابیس
+// Connect to the database
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// بررسی اتصال
+// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// دریافت مقادیر ورودی از فرم
+// Get input values from the form
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-// استفاده از prepared statement برای جلوگیری از حملات تزریق SQL
+// Use prepared statement to prevent SQL injection attacks
 $stmt = $conn->prepare("SELECT * FROM users WHERE username = ? AND password = ?");
 $stmt->bind_param("ss", $username, $password);
 
-// اجرای prepared statement
+// Execute the prepared statement
 $stmt->execute();
 
-// دریافت نتیجه
+// Get the result
 $result = $stmt->get_result();
 
 if ($result->num_rows == 1) {
-    // ورود موفقیت‌آمیز
-    header("Location: foodi.html"); // هدایت به صفحه "foodi.php"
-    exit; // جلوگیری از اجرای بقیه کدها
+    // Successful login
+    header("Location: foodi.html"); // Redirect to "foodi.php" page
+    exit(); // Prevent execution of remaining code
 } else {
-    // ورود ناموفق
-    echo "Invalid username or password!";
+    // Failed login
+    header("Location: login.html?error=1");
+    exit();
 }
 
-// بستن اتصال به دیتابیس
+// Close the database connection
 $stmt->close();
 $conn->close();
 ?>

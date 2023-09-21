@@ -11,8 +11,21 @@
       <input type="text" name="username" placeholder="Username" required>
       <input type="password" name="password" placeholder="Password" required>
       <button type="submit">Log In</button>
+      <p id="error-message" style="color: red; display: none; margin-top: 10px; margin-bottom: 0px;">Username or password is wrong</p>
+
     </form>
-    <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+
+    <p>Don't have an account? <a href="register.html">Sign Up</a></p>
   </div>
 </body>
+
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const error = urlParams.get('error');
+  
+  if (error === '1') {
+      const errorMessage = document.getElementById('error-message');
+      errorMessage.style.display = 'block';
+  }
+</script>
 </html>

@@ -353,6 +353,17 @@ function login(event) {
     alert('Invalid login credentials!');
   }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const error = urlParams.get('error');
+
+  if (error === '1') {
+      const errorMessage = document.getElementById('error-message');
+      errorMessage.style.display = 'block';
+  }
+});
+
 populateCountrySelect();
 
 
