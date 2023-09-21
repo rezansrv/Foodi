@@ -137,7 +137,7 @@ text-decoration: none;
 height: 32px; 
 }
 .navButton{
-    width: 179px;
+    width: 160px;
 height: 60px;
 cursor: pointer;
 border: none;
@@ -206,8 +206,8 @@ line-height: 170.5%; /* 44.33px */
     border-radius: 40px;
 background: #39DB4A;
 box-shadow: -2px 22px 38px 0px rgba(142, 255, 154, 0.50);
-width: 229px;
-height: 80px;
+width: 205px;
+height: 75px;
 cursor: pointer;
 flex-shrink: 0;
 }
@@ -278,6 +278,7 @@ max-height: 620.275px;
     color: var(--text-color);
 text-align: center;
 margin-top: 29px;
+margin-bottom: 20px;
 font-size: 50px;
 font-style: normal;
 font-weight: 700;
@@ -765,14 +766,14 @@ line-height: normal;
             font-size: 20px;
             color: white; 
             cursor: pointer; 
-            padding: 20px; 
-            padding-top: 14px;
+            padding: 18px; 
+            padding-top: 9px;
             border-radius: 50%; 
             opacity: 90%;
           }
           
           #myBtn:hover {
-            background-color: #555;
+            background-color: #777;
           }
 
           .navBar li {
