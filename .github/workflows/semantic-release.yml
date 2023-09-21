@@ -27,8 +27,8 @@ jobs:
         with:
           node-version: "lts/*"
 
-      - name: Copy releaserc
-        run: cp .github/releaserc.yml .
+      - name: Copy .releaserc
+        run: cp .github/.releaserc.yml .
 
       - name: Npm install
         run: npm i -g semantic-release @semantic-release/changelog @semantic-release/git
